@@ -4,9 +4,9 @@ const fechaInput = document.getElementById("fecha");
 const horaSelect = document.getElementById("hora");
 
 // 🔧 Cambia esta URL por la de tu backend (ej: Render, Railway, etc)
-const API_BASE = "http://localhost:3000/api/citas";
+// const API_BASE = "http://localhost:3000/api/citas";
 // cuando lo subas será algo como: 
-// const API_BASE = "https://tu-backend.onrender.com/api/citas";
+const API_BASE = "barbero-psi.vercel.app";
 
 // Horarios personalizados por barbero
 const horariosBarberos = {
