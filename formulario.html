@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar cita</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Agendar cita</h2>
+    <form id="citaForm">
+      <label for="nombre">Tu nombre</label>
+      <input type="text" id="nombre" required>
+
+      <label for="barbero">Selecciona barbero</label>
+      <select id="barbero" required>
+        <option value="">-- Selecciona --</option>
+        <option value="juan">Juan</option>
+        <option value="carlos">Carlos</option>
+        <option value="mario">Mario</option>
+      </select>
+
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" required>
+
+      <label for="hora">Hora disponible</label>
+      <select id="hora" required>
+        <option value="">-- Selecciona un barbero y fecha --</option>
+      </select>
+
+      <label for="motivo">Motivo</label>
+      <textarea id="motivo" rows="3" required></textarea>
+
+      <button type="submit">Agendar por WhatsApp</button>
+    </form>
+  </div>
+
+  <script src="js/formulario.js"></script>
+</body>
+</html>

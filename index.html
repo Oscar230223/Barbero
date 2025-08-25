@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Bienvenido</h2>
+    <p>Elige cómo deseas ingresar:</p>
+
+    <button id="btnUsuario">Usuario</button>
+    <button id="btnAdmin">Admin</button>
+
+    <form id="formAdmin" style="display:none; margin-top:20px;">
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <p id="errorMsg" style="color:red; display:none; margin-top:10px;">Credenciales incorrectas</p>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
